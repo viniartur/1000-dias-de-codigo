@@ -10,3 +10,17 @@ void ft_ultimate_div_mod(int *a, int *b);
 int pointed by a. The remainder of the division is stored in the int pointed by b.
 
 */
+
+void ft_ultimate_div_mod(int *a, int *b)
+{
+    int mod;
+    int div;
+
+
+    div = *a / *b;
+    mod = *a % *b;
+
+    *a = div;
+    *b = mod;
+
+}
